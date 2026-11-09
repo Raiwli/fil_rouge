@@ -1,0 +1,32 @@
+Station : 07015 ; période : 2023 ; lignes brutes : 2864
+Lignes station conservées : 2864 / 2920 attendues ; absentes : 56
+Températures min/max : -5.00 / 33.90 °C
+rr3 : min=-0.10, max=19.00, zéros=72.4%, traces=228, manquantes=5
+Les traces (-0.1) sont converties à 0 pour les cumuls ; les NaN restent manquants.
+Pas de remplissage artificiel ; agrégations basées sur les observations disponibles.
+Types bruts :
+numer_sta      int64
+date           int64
+t            float64
+pmer           int64
+pres           int64
+u              int64
+dd             int64
+ff           float64
+rr3          float64
+
+Valeurs manquantes :
+colonne  manquantes  taux_pourcent
+      t           0           0.00
+   pmer           0           0.00
+   pres           0           0.00
+      u           0           0.00
+     dd           0           0.00
+     ff           0           0.00
+    rr3           5           0.17
+
+COMPARAISON DES MODÈLES :
+       modele  n_total  lignes_perdues  test_MAE_C  test_RMSE_C   test_R2  reference_test_MAE_C
+    principal     2864               0    3.158395     3.960688 -0.273150              5.121857
+sans_humidite     2864               0    3.554130     4.350975 -0.536426              5.121857
+   calendrier     2864               0    3.497047     4.306542 -0.505205              5.121857
